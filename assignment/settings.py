@@ -69,6 +69,17 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+SWAGGER_SETTINGS = {
+    'USE_SESSION_AUTH': False,  # 세션 인증을 비활성화하여, 로그인 없이 Swagger UI 접근 가능
+    'SECURITY_DEFINITIONS': {
+        'Bearer': {
+            'type': 'apiKey',
+            'in': 'header',
+            'name': 'Authorization'
+        }
+    },
+}
+
 ROOT_URLCONF = 'assignment.urls'
 
 TEMPLATES = [
