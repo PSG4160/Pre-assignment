@@ -25,3 +25,56 @@
 - git clone https://github.com/PSG4160/Pre_assignment
 - cd Pre_assignment
 
+
+# API 테스트 결과 (with Postman)
+
+---
+
+## 1. 회원가입
+
+- **API URL:** `POST /signup/` 
+- **정상 요청** 
+
+
+![정상적 회원가입 결과](screenshots/signup_s.png)
+
+- **회원가입 실패한 경우** 
+
+
+![실패](screenshots/signup_f.png)
+
+## 2. 로그인
+
+- **API URL:** `POST /login/` 
+- **정상 요청**
+
+
+![정상적 로그인 결과](screenshots/login_s.png)
+
+- **로그인 실패한 경우** 
+
+
+![실패](screenshots/login_f.png)
+
+## 3. 토큰 테스트
+
+- **API URL:** `GET /protected/` 
+- **정상 요청**
+
+
+![정상 결과](screenshots/token_ok.png)
+
+- **토큰 유효하지 않은 경우** 
+
+
+![실패](screenshots/token_non.png)
+
+- **토큰 만료된 경우** 
+
+
+![실패](screenshots/token_ex.png)
+
+- **토큰이 없는 경우** 
+
+
+![실패](screenshots/token_x.png)
