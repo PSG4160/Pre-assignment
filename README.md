@@ -22,5 +22,6 @@
 
 
 # 프로젝트 코드 클론 
-git clone https://github.com/PSG4160/Pre_assignment
-cd Pre_assignment
+- git clone https://github.com/PSG4160/Pre_assignment
+- cd Pre_assignment
+
